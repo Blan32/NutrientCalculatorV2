@@ -68,9 +68,7 @@ extension GraphView {
                     
                     //coordinates 0,0 start at top left on iphone so we need to invert it
                     let yPosition = (1 - CGFloat((data[index] - minY) / yAxis)) * geometry.size.height
-                    
-                    print(yPosition)
-                    
+                                        
                     if index == 0 {
                         path.move(to: CGPoint(x: xPosition, y: yAxis == 0.0 ? geometry.size.height * 0.5 : yPosition))
                     }
