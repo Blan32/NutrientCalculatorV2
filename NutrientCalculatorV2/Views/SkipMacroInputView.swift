@@ -24,7 +24,7 @@ struct SkipMacroInputView: View {
                 .bold()
             
             VStack(alignment: .leading, spacing: 10) {
-                Text("You can choose to skip this section, but it may take the a bit longer find your body's ideal calorie and macronutrient targets.")
+                Text("You can choose to skip this section, but it may take a bit longer find your body's ideal calorie and macronutrient targets.")
                     .padding(.vertical)
                     .padding(.horizontal, 20)
             }
