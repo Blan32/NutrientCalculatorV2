@@ -13,15 +13,19 @@ struct MacroDisplay: View {
     var fillColor: Color
     
     var body: some View {
-        
-        Text(title)
-            .bold()
-            .padding(.leading)
-            .frame(width: UIScreen.main.bounds.width * 0.5, height: 30, alignment: .leading)
-            .background(
-                Capsule()
-                    .fill(fillColor)
-            )
+        HStack {
+            Text(title)
+                .bold()
+                .padding(.horizontal, 35)
+            Spacer()
+        }
+        .frame(height: 35, alignment: .leading)
+        .frame(maxWidth: .infinity)
+        .background(
+            Capsule()
+                .fill(fillColor)
+                .padding(.horizontal)
+        )
     }
 }
 
